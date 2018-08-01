@@ -1,0 +1,31 @@
+/************************************************************
+ 
+ Name: CreateCandidateRecord
+ Type: Apex Class  
+ Purpose: Apex Class  for  lightning component 
+      CreateCandidateRecordController.cmp
+ ***********************************************************/
+public with sharing class CreateContactRecord {
+
+    /**
+   * Create a new candidate Record
+   *
+   * @param Contact candidate  candidate record to be inserted
+   * 
+   */
+    @AuraEnabled
+    public static void createRecord (Contact candidate){
+        
+        try{
+            System.debug('CreateContactRecord::createRecord::candidate'+candidate);
+            
+            if(candidate != null){
+                insert candidate;
+            }
+            
+        } catch (Exception ex){
+            
+        }
+        
+    }    
+}

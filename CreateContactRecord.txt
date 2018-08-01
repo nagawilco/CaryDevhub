@@ -1,10 +1,3 @@
-/************************************************************
- 
- Name: CreateCandidateRecord
- Type: Apex Class  
- Purpose: Apex Class  for  lightning component 
-      CreateCandidateRecordController.cmp
- ***********************************************************/
 public with sharing class CreateContactRecord {
 
     /**
